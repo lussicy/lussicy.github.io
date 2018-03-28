@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>bootshrap</title>
+	<title>Lussicy</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="minwidth:550px">
+<body >
   <div id="aside">
       <a href="https://github.com/lussicy/lussicy.github.io" class="github-corner" aria-label="View Source Code on Github">
       <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#BA68C8; color:#fff; position: fixed; z-index:1000;top: 0; border: 0; left: 0; transform: scale(-1, 1);" aria-hidden="true";>
@@ -23,14 +23,14 @@
             <nav class="tips-inner">
              <ul>
                <li><a href="#">Song</a></li>
-               <li><a href="#">wedding</a></li>
+               <li><a href="./photos/photos.html">Photos</a></li>
+               <li><a href="./clock/clock.html">Clock</a></li>
                <li><a href="#">Tags</a></li>
-               <li><a href="#">Clock</a></li>
              </ul>
             </nav>
           </div>
 
-      <h1 id="logo"><a title="HI DARING" data-toggle="tooltip" href="#">LUSSICY</a></h1>
+      <h1 id="logo"><a title="HI DARING" data-toggle="tooltip" href="./index.html">LUSSICY</a></h1>
       <div id="header">
          <img class="shake" src="./images/head.jpg">
       </div>
@@ -39,18 +39,18 @@
              <div class="box-arrow"></div>
              <div class="box-context">
                <li><a href="#">Song</a></li>
-               <li><a href="#">wedding</a></li>
+               <li><a href="./photos/photos.html">Photos</a></li>
+               <li><a href="./photos/photos.html">Clock</a></li>
                <li><a href="#">Tags</a></li>
-               <li><a href="#">Clock</a></li>
              </div>
       </div>
       <div id="menu" role="navigation">
         <ul>
-          <li><a href="index.html">主页</a></li>
-          <li><a href="blog.html">标签</a></li>
-          <li><a href="portfolio.html">基础知识</a></li>
-          <li><a href="./photos/photos.html">进阶知识</a></li>
-          <li><a href="./Love-master/Love-master.html">后端&amp;框架</a></li>
+          <li><a href="./index.html">主页</a></li>
+          <li><a href="#">标签</a></li>
+          <li><a href="#">基础知识</a></li>
+          <li><a href="#">进阶知识</a></li>
+          <li><a href="#">后端&amp;框架</a></li>
         </ul>
       </div>
 
@@ -58,7 +58,7 @@
         <p>友情链接:</p>
         <ul>
           <a class="mail" title="Mail" data-toggle="tooltip" href="mailto:15651692572@163.com">mail</a>
-          <a class="github" title="github" data-toggle="tooltip" href="https://github.com/waikai">github</a>
+          <a class="github" title="github" data-toggle="tooltip" href="https://github.com/lussicy/lussicy.github.io">github</a>
           <a class="zhihu" title="Zhihu" data-toggle="tooltip" href="https://www.zhihu.com/people/bai-zai-zai-32/activities">zhihu</a>
           <a class="facebook" title="Facebook" data-toggle="tooltip" href="https://www.facebook.com/waikai">facebook</a>
           <a class="QQ" title="QQ" data-toggle="tooltip"  href="tencent://message/?uin=871011073">QQ</a>
@@ -341,43 +341,6 @@
 
    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 	 <script src="js/bootstrap.min.js"></script>
-   <script>
-     $(function(){
-      
-      var a=11;
-      var b="url(images/bg-x.jpg)".replace(/x/gi,Math.ceil(Math.random()*a));
-      $("a").tooltip(),
-      $("#box").popover(),
-      $("#collapse-1,#collapse-2,#collapse-3,#collapse-4,#collapse-5,#collapse-6,#collapse-7,#collapse-8,#collapse-9,#collapse-10,#collapse-11,#collapse-12,#collapse-13,#collapse-14").collapse(),
-      $(".box-arrow").css('left', $('#aside').width()/2-3),
-      $(".box-context").css('left', $('#aside').width()/2-40),
-
-      $(window).resize(function(){
-        $(".box-arrow").css('left', $('#aside').width()/2-3),
-        $(".box-context").css('left', $('#aside').width()/2-50);
-        
-           }),
-
-        $("#aside").css({"background-image": b,"background-size": "cover","background-position": "center"});//背景图片随机添加***
-     
-        $(".navbar").click(function(){
-          $(".tips").animate({width:'toggle'},200)
-        });
-
-
-          window.onscroll = function(){
-            var scrollTop = document.documentElement.scrollTop + document.body.scrollTop;
-            if(scrollTop >= 180){
-                $(".header-top").removeClass("hide").addClass("fixed");
-            }else{
-               $(".header-top").addClass("hide").removeClass("fixed");
-            }
-           };
-
-
-           
-      });
-
-   </script>
+   <script src="js/main.js"></script>     
 </body>
 </html>
